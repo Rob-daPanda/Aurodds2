@@ -44,4 +44,153 @@
     }
     .features, .players {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+    .card {
+      background-color: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 0.75rem;
+      border: 1px solid #2a2a2a;
+      box-shadow: 0 0 10px rgba(0,255,153,0.1);
+      text-align: center;
+    }
+    .card h3 {
+      color: #00ff99;
+      margin-bottom: 0.75rem;
+    }
+    .card p { color: #dddddd; }
+    .card img {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
+    .pricing {
+      background-color: #111;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .pricing h2 {
+      font-size: 2rem;
+      color: #00ffcc;
+      margin-bottom: 1rem;
+    }
+    .plans {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .plan {
+      background-color: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      padding: 2rem;
+      width: 260px;
+      border-radius: 0.75rem;
+    }
+    .plan h3 {
+      color: #00ff99;
+      margin-bottom: 0.5rem;
+    }
+    .plan p {
+      color: #cccccc;
+      margin-bottom: 1rem;
+    }
+    .footer {
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      background-color: #0d0d0d;
+      color: #888;
+    }
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AurOdds</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#players">Live Stats</a>
+      <a href="#pricing">Pricing</a>
+      <a href="mailto:support@aurodds.com">Support</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>🔥 Predict Smarter. Bet Sharper. 🔥</h2>
+    <p>Your all-in-one AI-powered assistant for strategic NFL betting and beyond. Tap into predictive data, real stats, and accurate forecasts.</p>
+  </section>
+
+  <section id="features" class="features">
+    <div class="card">
+      <h3>🏈 NFL-First Predictions</h3>
+      <p>Get the most accurate team and player picks powered by up-to-date stats and expert-level machine learning models.</p>
+    </div>
+    <div class="card">
+      <h3>💰 ROI Optimization</h3>
+      <p>Our algorithm focuses on maximizing return, not just wins. Know where to put your money with confidence.</p>
+    </div>
+    <div class="card">
+      <h3>🔓 Freemium Access</h3>
+      <p>Free users get solid weekly picks. Upgrade for elite insights, high-value predictions, and deeper analysis.</p>
+    </div>
+    <div class="card">
+      <h3>🌍 All Sports Coming Soon</h3>
+      <p>From UFC to Wrestling to NBA, we’re expanding into every bettable arena.</p>
+    </div>
+  </section>
+
+  <section id="players" class="players">
+    <div class="card">
+      <img src="https://static.www.nfl.com/image/private/f_auto,q_auto:eco,c_fill,w_150,h_150,g_face/v1686604737/photos/logos-teams/ATL" alt="Atlanta Falcons" />
+      <h3>Atlanta Falcons</h3>
+      <p>QB: 2 TDs, 1 INT, 265 Yards | Win Probability: 62%</p>
+    </div>
+    <div class="card">
+      <img src="https://static.www.nfl.com/image/private/f_auto,q_auto:eco,c_fill,w_150,h_150,g_face/v1686604744/photos/logos-teams/DAL" alt="Dallas Cowboys" />
+      <h3>Dallas Cowboys</h3>
+      <p>RB: 1 TD, 110 Yards | Defense Rank: 3rd | Win Probability: 76%</p>
+    </div>
+    <div class="card">
+      <img src="https://static.www.nfl.com/image/private/f_auto,q_auto:eco,c_fill,w_150,h_150,g_face/v1686604741/photos/logos-teams/KC" alt="Kansas City Chiefs" />
+      <h3>Kansas City Chiefs</h3>
+      <p>QB: 4 TDs, 1 INT, 344 Yards | WR1: 123 Yards | Win Probability: 89%</p>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2>Plans That Fit Every Bettor</h2>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <p>Basic weekly picks, ads supported</p>
+        <p><strong>$0/month</strong></p>
+      </div>
+      <div class="plan">
+        <h3>Pro</h3>
+        <p>Priority picks, limited high-accuracy insights</p>
+        <p><strong>$4.99/month</strong></p>
+      </div>
+      <div class="plan">
+        <h3>Elite</h3>
+        <p>Full AI insights, ROI alerts, early unlocks</p>
+        <p><strong>$14.99/month</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 AurOdds. For help, contact <a href="mailto:support@aurodds.com">support@aurodds.com</a></p>
+  </footer>
+</body>
+</html>
